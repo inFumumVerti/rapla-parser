@@ -344,6 +344,14 @@ public final class DataImporter {
         String timeData, time = "99:99-99:99";
         Node firstElNode = aChildren.item(0);
         // If no event is provided, event is whole working day
+        for(int i = 0; i < aChildren.getLength(); i++){
+            if(aChildren.item(i) == null){
+                System.out.println("xx");
+            }
+            else{
+                System.out.println(aChildren.item(i).getNodeValue());
+            }
+        }
         if (firstElNode.getNodeType() == Node.ELEMENT_NODE) {
             Element el = (Element) firstElNode;
             String tagName  = el.getTagName();

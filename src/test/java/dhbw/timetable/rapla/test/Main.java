@@ -21,29 +21,13 @@ public class Main {
     private static final boolean debugData = false;
 
     private final static String[] test_urls = {
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhA_bi91ugPaHvrpxD-lcejo&day=9&month=12&year=2016&today=Heute&test",
+            "https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=ahrensb&file=TEL20AT",
 
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhAWXw8wYxzdc8a_Gx7NBrcf&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "http://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhCdjALVplAQk2X4GqU-cLG6&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhCRWwKk8VgrnjjdW94d4cBX&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhB0mnNDNmJOne3oQwbsmD-7&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "http://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhCoRaEDgu02i2mi9JJCMzhf&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhAFY7E6cFyNu-AINyZP2Og4&day=9&month=12&year=2016&today=Heute&test=crap",
-
-            "https://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhCSKRwgs9mGagYZS1i6SRu2&day=5&month=3&year=2017&next=%3E%3E",
-
-            "http://rapla.dhbw-stuttgart.de/rapla?key=txB1FOi5xd1wUJBWuX8lJhGDUgtMSFmnKLgAG_NVMhAN4vmf5B34HGBp-zBPYkE3&day=5&month=3&year=2017&next=%3E%3E",
-
-            "https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=vollmer&file=tinf15b3&day=26&month=6&year=2017&goto=Datum+anzeigen&test=crap",
+            "https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=eisenbiegler&file=TINF20B4"
     };
 
     public static void main(String[] args)  {
-        unit_test(LocalDate.of(2013, 1, 1), LocalDate.of(2018, 1, 1));
+        unit_test(LocalDate.of(2020, 1, 1), LocalDate.of(2023, 1, 1));
     }
 
     private static void unit_test(LocalDate start, LocalDate end) {
